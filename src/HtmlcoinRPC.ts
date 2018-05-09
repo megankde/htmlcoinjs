@@ -1,4 +1,4 @@
-import { QtumRPCRaw } from "./QtumRPCRaw"
+import { HtmlcoinRPCRaw } from "./HtmlcoinRPCRaw"
 
 export interface IGetInfoResult {
   version: number,
@@ -35,7 +35,7 @@ export interface IRPCSendToContractRequest {
   datahex: string
 
   /**
-   * The amount in QTUM to send. eg 0.1, default: 0
+   * The amount in HTML to send. eg 0.1, default: 0
    */
   amount?: number | string
 
@@ -162,7 +162,7 @@ export interface IRPCGetTransactionReceiptRequest {
 }
 
 /**
- * Transaction receipt returned by qtumd
+ * Transaction receipt returned by htmlcoind
  */
 export interface IRPCGetTransactionReceiptBase {
   blockHash: string
@@ -282,7 +282,7 @@ export interface IPromiseCancel<T> extends Promise<T> {
   cancel: () => void
 }
 
-export class QtumRPC extends QtumRPCRaw {
+export class HtmlcoinRPC extends HtmlcoinRPCRaw {
   private _hasTxWaitSupport: boolean | undefined
 
   public getInfo(): Promise<IGetInfoResult> {
