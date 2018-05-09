@@ -10,13 +10,13 @@ const {
   encodeMethod,
   logDecoder,
   configure: configureABI,
-} = require("qtumjs-ethjs-abi") as IETHABI
+} = require("htmlcoinjs-ethjs-abi") as IETHABI
 
 configureABI({ noHexStringPrefix: true })
 
 import {
   ITransactionLog,
-} from "./QtumRPC"
+} from "./HtmlcoinRPC"
 
 export function encodeInputs(method: IABIMethod, args: any[] = []): string {
   const calldata = encodeMethod(method, args)
