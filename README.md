@@ -1,4 +1,4 @@
-The QTUM JavaScript library for Smart Contract development.
+The HTMLCOIN JavaScript library for Smart Contract development.
 
 See [documentation](https://qtumproject.github.io/qtumjs-doc/).
 
@@ -7,7 +7,7 @@ See [companion tutorial](https://github.com/qtumproject/qtumbook/blob/master/par
 # Install
 
 ```
-npm install qtumjs
+npm install htmlcoinjs
 ```
 
 This is a sample code snippet that transfer ERC20 tokens:
