@@ -1,10 +1,10 @@
 import { assert } from "chai"
 
-import { QtumRPC } from "../QtumRPC"
+import { HtmlcoinRPC } from "../HtmlcoinRPC"
 
-export const rpcURL = "http://qtum:test@localhost:5889"
+export const rpcURL = "http://htmlcoin:test@localhost:5889"
 
-export const rpc = new QtumRPC(rpcURL)
+export const rpc = new HtmlcoinRPC(rpcURL)
 
 export const repoData = require("../../solar.development.json")
 
