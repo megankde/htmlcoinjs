@@ -14,13 +14,13 @@ This is a sample code snippet that transfer ERC20 tokens:
 
 ```js
 import {
-  QtumRPC,
-} from "qtumjs"
+  HtmlcoinRPC,
+} from "htmlcoinjs"
 
 const repoData = require("./solar.json")
-const qtum = new Qtum("http://qtum:test@localhost:3889", repoData)
+const htmlcoin = new Htmlcoin("http://htmlcoin:test@localhost:3889", repoData)
 
-const myToken = qtum.contract("zeppelin-solidity/contracts/token/CappedToken.sol")
+const myToken = htmlcoin.contract("zeppelin-solidity/contracts/token/CappedToken.sol")
 
 async function transfer(fromAddr, toAddr, amount) {
   const tx = await myToken.send("transfer", [toAddr, amount], {
@@ -43,7 +43,7 @@ The [full source code](https://github.com/qtumproject/qtumbook-mytoken-qtumjs-cl
 
 ```
 docker run -it --rm \
-  --name qtumjs \
+  --name htmlcoinjs \
   -v `pwd`:/dapp \
   -p 5889:3889 \
   hayeah/qtumportal
@@ -52,7 +52,7 @@ docker run -it --rm \
 Enter into container:
 
 ```
-docker exec -it qtumjs sh
+docker exec -it htmlcoinjs sh
 ```
 
 Generate initial blocks:
