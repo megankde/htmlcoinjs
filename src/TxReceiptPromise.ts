@@ -4,8 +4,8 @@ import {
   IRPCGetTransactionReceiptResult,
   IRPCGetTransactionRequest,
   IRPCGetTransactionResult,
-  QtumRPC,
-} from "./QtumRPC"
+  HtmlcoinRPC,
+} from "./HtmlcoinRPC"
 import { sleep } from "./sleep"
 
 export type TxReceiptConfirmationHandler = (
@@ -24,7 +24,7 @@ export class TxReceiptPromise {
   private _emitter: EventEmitter
 
   constructor(
-    private _rpc: QtumRPC,
+    private _rpc: HtmlcoinRPC,
     public txid: string,
   ) {
     this._emitter = new EventEmitter()
