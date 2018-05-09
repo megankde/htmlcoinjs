@@ -5,7 +5,7 @@ import { assert } from "chai"
 import { rpc, assertThrow } from "./test"
 
 // import { } from "mocha"
-describe("QtumRPC", () => {
+describe("HtmlcoinRPC", () => {
   it("can make RPC call", async () => {
     const info = await rpc.rawCall("getinfo")
     assert.isNotEmpty(info)
