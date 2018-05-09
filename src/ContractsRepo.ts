@@ -1,6 +1,6 @@
 import { IContractInfo, Contract } from "./Contract"
 import { IABIMethod } from "./ethjs-abi"
-import { QtumRPC } from "./QtumRPC"
+import { HtmlcoinRPC } from "./HtmlcoinRPC"
 import { ContractLogDecoder } from "./abi"
 
 export interface IABIDefs {
