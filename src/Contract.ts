@@ -3,7 +3,7 @@ import { EventEmitter } from "eventemitter3"
 
 const {
   logDecoder,
-} = require("qtumjs-ethjs-abi") as IETHABI
+} = require("htmlcoinjs-ethjs-abi") as IETHABI
 
 import {
   decodeOutputs,
@@ -23,7 +23,7 @@ import {
   QtumRPC,
   IRPCWaitForLogsRequest,
   ILogEntry,
-} from "./QtumRPC"
+} from "./HtmlcoinRPC"
 
 import {
   TxReceiptConfirmationHandler,
@@ -121,7 +121,7 @@ export interface IContractCallResult extends IRPCCallContractResult {
  */
 export interface IContractSendRequestOptions {
   /**
-   * The amount in QTUM to send. eg 0.1, default: 0
+   * The amount in HTML to send. eg 0.1, default: 0
    */
   amount?: number | string
 
@@ -131,7 +131,7 @@ export interface IContractSendRequestOptions {
   gasLimit?: number
 
   /**
-   * Qtum price per gas unit, default: 0.00000001, min:0.00000001
+   * HTTM price per gas unit, default: 0.00000001, min:0.00000001
    */
   gasPrice?: number | string
 
