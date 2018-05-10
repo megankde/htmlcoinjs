@@ -1,5 +1,5 @@
 {
-  "name": "qtumjs",
+  "name": "htmlcoinjs",
   "version": "1.7.2",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
@@ -10,7 +10,7 @@
     "watch": "tsc -w",
     "build:umd": "webpack --config webpack.config.js"
   },
-  "npmName": "qtumjs",
+  "npmName": "htmlcoinjs",
   "npmFileMap": [
     {
       "basePath": "/dist/",
@@ -22,7 +22,7 @@
   "dependencies": {
     "axios": "^0.17.1",
     "btoa": "^1.1.2",
-    "qtumjs-ethjs-abi": "^1.0.2",
+    "htmlcoinjs-ethjs-abi": "^1.0.2",
     "eventemitter3": "^2.0.3",
     "url-parse": "^1.1.9"
   },
