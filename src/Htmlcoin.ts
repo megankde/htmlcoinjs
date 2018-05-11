@@ -8,7 +8,7 @@ import { Contract } from "./Contract"
  * @param providerURL URL of the qtumd RPC service.
  * @param repoData Information about Solidity contracts.
  */
-export class Htmlcoin extends QtumRPC {
+export class Htmlcoin extends HtmlcoinRPC {
   private repo: ContractsRepo
 
   constructor(providerURL: string, repoData?: IContractsRepoData) {
