@@ -10,7 +10,7 @@ See [companion tutorial](https://github.com/qtumproject/qtumbook/blob/master/par
 npm install htmlcoinjs
 ```
 
-This is a sample code snippet that transfer ERC20 tokens:
+This is a sample code snippet that transfer HRC20 tokens:
 
 ```js
 import {
