@@ -2,8 +2,6 @@ The HTMLCOIN JavaScript library for Smart Contract development.
 
 See [documentation](https://qtumproject.github.io/qtumjs-doc/).
 
-See [companion tutorial](https://github.com/qtumproject/qtumbook/blob/master/part2/erc20-js.md).
-
 # Install
 
 ```
