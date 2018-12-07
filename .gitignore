@@ -3,6 +3,6 @@ dist/
 .vscode/
 node_modules/
 .DS_Store
-.qtum
+.htmlcoin
 .cache
 solar.development.json
