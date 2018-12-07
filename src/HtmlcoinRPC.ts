@@ -45,12 +45,12 @@ export interface IRPCSendToContractRequest {
   gasLimit?: number
 
   /**
-   * Qtum price per gas unit, default: 0.00000001, min:0.00000001
+   * Htmlcoin price per gas unit, default: 0.00000001, min:0.00000001
    */
   gasPrice?: number | string
 
   /**
-   * The quantum address that will be used as sender.
+   * The htmlcoin address that will be used as sender.
    */
   senderAddress?: string
 
@@ -66,7 +66,7 @@ export interface IRPCSendToContractResult {
    */
   txid: string,
   /**
-   * QTUM address of the sender.
+   * HTMLCOIN address of the sender.
    */
   sender: string,
   /**
