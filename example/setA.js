@@ -1,6 +1,6 @@
-const { Contract, QtumRPC } = require("qtumjs")
+const { Contract, HtmlcoinRPC } = require("htmlcoinjs")
 
-const rpc = new QtumRPC("http://howard:yeh@localhost:13889")
+const rpc = new HtmlcoinRPC("http://howard:yeh@localhost:13889")
 
 async function main() {
   // Load the ABI and address of a deployed contract
