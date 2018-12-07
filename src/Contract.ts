@@ -20,7 +20,7 @@ import {
   IRPCGetTransactionResult,
   IRPCSendToContractResult,
   IRPCWaitForLogsResult,
-  QtumRPC,
+  HtmlcoinRPC,
   IRPCWaitForLogsRequest,
   ILogEntry,
 } from "./HtmlcoinRPC"
@@ -239,7 +239,7 @@ export class Contract {
    *      address, owner address, and ABI definition for methods and types.
    * @param opts - init options
    */
-  constructor(private rpc: QtumRPC, public info: IContractInfo, opts: IContractInitOptions = {}) {
+  constructor(private rpc: HtmlcoinRPC, public info: IContractInfo, opts: IContractInitOptions = {}) {
     this.methodMap = new MethodMap(info.abi)
     this.address = info.address
 
@@ -394,7 +394,7 @@ export class Contract {
       base = targetBase
     } else {
       switch (targetBase) {
-        case "qtum":
+        case "htmlcoin":
         case "btc":
           base = 0
           break
