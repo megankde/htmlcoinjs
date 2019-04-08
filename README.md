@@ -44,7 +44,7 @@ docker run -it --rm \
   --name htmlcoinjs \
   -v `pwd`:/dapp \
   -p 5889:3889 \
-  hayeah/qtumportal
+  hayeah/htmlcoinportal
 ```
 
 Enter into container:
@@ -56,9 +56,9 @@ docker exec -it htmlcoinjs sh
 Generate initial blocks:
 
 ```
-qcli generate 600
+htmlcoin-cli generate 600
 
-qcli getbalance
+htmlcoin-cli getbalance
 
 2000000.00000000
 ```
