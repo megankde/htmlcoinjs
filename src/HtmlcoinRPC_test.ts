@@ -16,6 +16,7 @@ describe("HtmlcoinRPC", () => {
       "balance",
       "stake",
       "blocks",
+      "deprecation-warning",
       "timeoffset",
       "connections",
       "proxy",
